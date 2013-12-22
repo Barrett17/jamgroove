@@ -1,0 +1,6 @@
+SubDir TOP ;
+
+# Include all the components
+SubInclude TOP application ;
+
+UninstallTarget $(INSTALL_DIRECTORY) ;

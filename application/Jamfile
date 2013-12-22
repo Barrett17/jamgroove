@@ -1,0 +1,11 @@
+SubDir TOP application ;
+
+SubDirSysHdrs [ FDirName $(TOP) ] ;
+
+Application App :
+	Main.cpp
+	: be $(TARGET_LIBSTDC++)
+	: App.rdef
+;
+
+InstallBin $(INSTALL_DIRECTORY) : App ;
