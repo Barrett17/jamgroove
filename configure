@@ -11,7 +11,7 @@ current_dir=`pwd`
 defines=""
 
 # Get install directory/prefix
-for i in "$@" do
+for i in "$@" ; do
 	case $i in
 		-p=*|--prefix=*)
 			PREFIX="${i#*=}"
@@ -21,7 +21,7 @@ for i in "$@" do
 	esac
 	PREFIX="${i#*=}"
 done
-if [ -z "$PREFIX" ]
+if [ -z "$PREFIX" ] ; then
 	echo "Usage: $0 -p=<directory>|--prefix=<directory>"
 	exit 1
 fi
