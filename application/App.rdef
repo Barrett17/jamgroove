@@ -1,0 +1,14 @@
+﻿
+resource app_signature APP_SIGNATURE;
+
+resource app_version {
+	major  = 0,
+	middle = 0,
+	minor  = 0,
+
+	variety = B_APPV_ALPHA,
+	internal = 0,
+
+	short_info = "App",
+	long_info = "App"
+);
