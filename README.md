@@ -1,0 +1,1 @@
+Simple jamfile based buildsystem for Haiku.
